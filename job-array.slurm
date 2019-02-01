@@ -9,4 +9,4 @@
 array=(1 2 3 4 5)
 
 echo "This is job number "$SLURM_ARRAY_TASK_ID
-echo "The value of the array is "array[$SLURM_ARRAY_TASK_ID]
+echo "The value of the array is "${array[$SLURM_ARRAY_TASK_ID]}
